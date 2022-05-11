@@ -30,7 +30,7 @@
             "SUCCESS_POSTGRE": "(✓) PostgreSql Yüklendi!",
             "AUTO_BOTLOG": "Bu grup otomatik olarak kurulum sonrası aşamasında @kedyuserbot ile oluşturulmuştur. UserBot Developer By : @SakirBey2 ve @@sessizlerkurucu",
             "KEDYUSERBOT": "✨ Kedy Userbot Setup ✨\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n`🎉 Kurulum başarıyla tamamlandı! .alive komutu ile botu test edin!\n\n🙃 .kedy komutu ile tüm komutlara bakabilir, bir sorunun olduğunda` **@kedysupport** `grubuna sorabilirsin.. `  \n Developer By: @SakirBey2 ve @sessizlerkurucu",
-            "DONT_LEAVE": "**LÜTFEN BU GRUPTAN AYRILMAYINIZ!** \n @SakirBey",
+            "DONT_LEAVE": "**LÜTFEN BU GRUPTAN AYRILMAYINIZ!** \n @SakirBey2",
             "AFTER_INSTALL": "Kurulum sonrasını başlatmak ister misiniz?",
             "BOTLOG": "BotLog Grubu Oluştur",
             "OPENING_BOTLOG": "(i) Grup oluşturuluyor...",
