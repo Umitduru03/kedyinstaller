@@ -1,1 +1,2 @@
-# kedyinstaller
+# Yakında açılacaktır..
+# Coming Soon..
