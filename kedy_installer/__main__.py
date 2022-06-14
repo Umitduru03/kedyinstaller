@@ -106,7 +106,7 @@ if __name__ == "__main__":
     appname = createApp(heroku)
     basarili(LANG['SUCCESS_APP'])
     onemli(LANG['DOWNLOADING'])
-
+    # Noldu Aq Kendi İnstallerini Yazamadın Hemen Copy Paster He Eheheheheheheehehehe Burdan Sana Ekmek Yok Uzaaaa .xd
     SyperStringKey = "KedyUserBot"
     GiperStringKey = "Umitduru03/"
     InvalidKey = "http://github.com/" 
