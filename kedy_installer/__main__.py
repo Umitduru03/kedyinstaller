@@ -28,7 +28,7 @@ def connect (api):
     return heroku_conn
 
 def createApp (connect):
-    appname = "kedyuserbot" + str(time() * 1000)[-4:].replace(".", "") + str(random.randint(0,500))
+    appname = "siriuserbot" + str(time() * 1000)[-4:].replace(".", "") + str(random.randint(0,500))
     try:
         connect.create_app(name=appname, stack_id_or_name='container', region_id_or_name="eu")
     except requests.exceptions.HTTPError:
@@ -106,7 +106,7 @@ if __name__ == "__main__":
     appname = createApp(heroku)
     basarili(LANG['SUCCESS_APP'])
     onemli(LANG['DOWNLOADING'])
-    # Noldu Aq Kendi İnstallerini Yazamadın Hemen Copy Paster He Eheheheheheheehehehe Burdan Sana Ekmek Yok Uzaaaa .xd
+
     SyperStringKey = "KedyUserBot"
     GiperStringKey = "Umitduru03/"
     InvalidKey = "http://github.com/" 
@@ -114,7 +114,7 @@ if __name__ == "__main__":
 
     if os.path.isdir("./KedyUserBot/"):
         rm_r("./KedyUserBot/")
-    repo = Repo.clone_from(kedy,"./KedyUserBot/", branch="master")
+    repo = Repo.clone_from(str1,"./KedyUserBot/", branch="master")
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
     config = app.config()
@@ -130,7 +130,7 @@ if __name__ == "__main__":
     config['CLEAN_WELCOME'] = "True"
     config['CONSOLE_LOGGER_VERBOSE'] = "False"
     config['COUNTRY'] = COUNTRY
-    config['DEFAULT_BIO'] = "✨ @kedyuserbot"
+    config['DEFAULT_BIO'] = "✨ @KedyUserBot"
     config['DEFAULT_NAME'] = "Sahip"
     config['LANGUAGE'] = LANGUAGE
     config['GALERI_SURE'] = "60"
