@@ -20,6 +20,7 @@
             "SET_LANG": "(✓) Botunuz artıq {} dilindədir!",
             "SUCCESS_CONFIG": "(✓) Məlumatlar yazıldı!",
             "OPENING_DYNO": "(i) Dyno açılır...",
+            "ERROR_DYNO": "(!) Fayllar yüklənərkən bir xəta baş verdi. Xahiş edirik kodu yenidən yapışdırın.",
             "OPENED_DYNO": "(✓) Dynolar açıldı!",
             "SUCCESS_DEPLOY": "(✓) Deploy proseduru uğurla başa çatdı!",
             "AFTERDEPLOY": "Quraşdırılmanın sonrasını başladmaq istəyirsinizmi?",
