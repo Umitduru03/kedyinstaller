@@ -114,7 +114,7 @@ if __name__ == "__main__":
 
     if os.path.isdir("./KedyUserBot/"):
         rm_r("./KedyUserBot/")
-     repo = Repo.clone_from(kedy,"./KedyUserBot/", branch="master")")
+    repo = Repo.clone_from(kedy,"./KedyUserBot/", branch="master")
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
     config = app.config()
