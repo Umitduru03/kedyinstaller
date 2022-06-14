@@ -20,6 +20,7 @@
             "SET_LANG": "(✓) Bot is now in {} language!",
             "SUCCESS_CONFIG": "(✓) Data has been written!",
             "OPENING_DYNO": "(i) Dyno is opening...",
+            "ERROR_DYNO": "(!) An error occurred while loading files. Please paste the code again.",
             "OPENED_DYNO": "(✓) Dynos are open!",
             "SUCCESS_DEPLOY": "(✓) Deploy operation successful!",
             "AFTERDEPLOY": "Do you want to start after installation?",
