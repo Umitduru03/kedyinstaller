@@ -20,6 +20,7 @@
             "SET_LANG": "(✓) Bot artık {} dilinde!",
             "SUCCESS_CONFIG": "(✓) Veriler yazıldı!",
             "OPENING_DYNO": "(i) Dyno açılıyor...",
+            "ERROR_DYNO": "(!) Dosyalar yüklenirken bir hata oluştu. Lütfen kodu tekrar yapıştırın.",
             "OPENED_DYNO": "(✓) Dynolar açıldı!",
             "SUCCESS_DEPLOY": "(✓) Deploy işlemi başarılı!",
             "AFTERDEPLOY": "Kurulum sonrasını başlatmak ister misiniz?",
