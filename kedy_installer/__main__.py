@@ -28,7 +28,7 @@ def connect (api):
     return heroku_conn
 
 def createApp (connect):
-    appname = "kedyuserbot" + str(time() * 1000)[-4:].replace(".", "") + str(random.randint(0,500))
+    appname = "herlockuserbot" + str(time() * 1000)[-4:].replace(".", "") + str(random.randint(0,500))
     try:
         connect.create_app(name=appname, stack_id_or_name='container', region_id_or_name="eu")
     except requests.exceptions.HTTPError:
@@ -63,7 +63,7 @@ async def oturumacvebotlogolustur (stri, aid, ahash):
         await Client.start()
         ms = await Client.send_message('me',LANG['KEDYUSERBOT'])
         KanalId = await Client(CreateChannelRequest(
-            title='KedyUserBot BotLog',
+            title='MajesteUserBot BotLog',
             about=LANG['AUTO_BOTLOG'],
             megagroup=True
         ))
@@ -112,9 +112,9 @@ if __name__ == "__main__":
     InvalidKey = "http://github.com/" 
     str1 = InvalidKey+GiperStringKey+SyperStringKey
 
-    if os.path.isdir("./KedyUserBot/"):
-        rm_r("./KedyUserBot/")
-    repo = Repo.clone_from(str1,"./KedyUserBot /", branch="master")
+    if os.path.isdir("./Kedy/"):
+        rm_r("./Kedy/")
+    repo = Repo.clone_from(str1,"./Kedy/", branch="master")
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
     config = app.config()
@@ -130,7 +130,7 @@ if __name__ == "__main__":
     config['CLEAN_WELCOME'] = "True"
     config['CONSOLE_LOGGER_VERBOSE'] = "False"
     config['COUNTRY'] = COUNTRY
-    config['DEFAULT_BIO'] = "✨ @kedyuserbot"
+    config['DEFAULT_BIO'] = "✨ @KedyUserBot"
     config['DEFAULT_NAME'] = "Sahip"
     config['LANGUAGE'] = LANGUAGE
     config['GALERI_SURE'] = "60"
@@ -147,12 +147,18 @@ if __name__ == "__main__":
     config['TZ'] = TZ
     config['TZ_NUMBER'] = "1"
     config['UPSTREAM_REPO_URL'] = "https://github.com/Umitduru03/KedyUserBot"
-
+    config['SEVGILI'] = "None"
     config['WARN_LIMIT'] = "3"
     config['WARN_MODE'] = "gmute"
 
     basarili(LANG['SUCCESS_CONFIG'])
     bilgi(LANG['OPENING_DYNO'])
+
+    try:
+        app.process_formation()["worker"].scale(1)
+    except:
+        hata(LANG['ERROR_DYNO'])
+        exit(1)
 
     basarili(LANG['OPENED_DYNO'])
     basarili(LANG['SUCCESS_DEPLOY'])
@@ -184,6 +190,8 @@ if __name__ == "__main__":
                 basarili(LANG['SUCCESS_DEFAULTNAME'])
 
                 
+
+
             
             bilgi(f"[1] {LANG['NO_SUP']}\n[2] {LANG['NO_LOG']}\n\n[3] {LANG['NO_PMAUTO']}\n\n[4] {LANG['NO_DEFAULTNAME']}\n\n[5] {LANG['CLOSE']}")
             
